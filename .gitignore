@@ -1,4 +1,3 @@
 # ignora todo lo que tenga extensión .log #
 *.log
-# ignora todo lo que esté en la carpeta /resources #
-/resources
+
