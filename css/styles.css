@@ -34,10 +34,6 @@ div {
 
 }
 
-/* main div {
-  display: block
-} */
-
 /* Formatos del header */
 header {
     height: 15vh;
@@ -117,3 +113,8 @@ footer {
   height: 100%;
 }
 
+@media screen and (max-width: 991px) {
+  section {
+    height: 40vh;
+  }
+}
