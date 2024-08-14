@@ -31,8 +31,12 @@ div {
   height: 100%;
   width: auto;
   display: inline-block;
+
 }
 
+/* main div {
+  display: block
+} */
 
 /* Formatos del header */
 header {
@@ -74,8 +78,12 @@ ul {
 
 }
  
-.menu-home {
+.menu-4 {
   height: 25%;
+}
+
+.menu-3 {
+  height: 33%;
 }
 
 li {
