@@ -18,7 +18,7 @@ p {
 section {
   height: 80vh;
   width: 100%;
-  overflow: scroll;
+  overflow: overlay;
 }
 
 article {
@@ -117,3 +117,17 @@ footer {
   height: 100%;
 }
 
+.carousel_card {
+  height: 100%;
+}
+
+.carousel_card_img {
+  height: 80%;
+}
+
+@media screen and (max-width: 990px) {
+  section {
+    height: 40vh;
+  }
+ 
+}
