@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 body {
     height: 100vh;
     width: auto;
@@ -39,17 +41,47 @@ div {
 } */
 
 /* Formatos del header */
-header {
+/* header {
     height: 15vh;
     width: 100%;
     background-color: rgba(210, 105, 30, 0.329);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+} */
+
+header {
+  height: 15vh;
+  width: 100%;
+    background-color: rgba(210, 105, 30, 0.329);
+  display: grid;
+  grid-template-areas: 
+    "logo title search"
+    "logo title login";
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 15vh auto 25%; 
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#title {
+  text-align: center;
+  grid-area: title;
+}
+
+#search {
+  grid-area: search; 
+}
+
+#login {
+  grid-area: login;
+  text-align: center;
 }
 
 #barra-busqueda {
-  margin: 10%;
+ 
 }
 
 
@@ -129,5 +161,11 @@ footer {
   section {
     height: 40vh;
   }
- 
+  header {
+    grid-template-areas: 
+    "logo title title"
+    "logo login search";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 15vh 50% 50%;
+  }
 }
