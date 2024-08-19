@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Fuentes */
 @font-face {
   font-family: "ejemploMexico";
   src: url(../resources/fonts/¡Viva\ México\ cabrones!.ttf);
@@ -20,22 +21,27 @@ body {
 
 p {
   margin-bottom: 0%;
+  overflow:visible;
 }
 
 h3 {
   color: brown;
 }
 
+h5 {
+  overflow:visible;
+}
+
 section {
   height: 80vh;
   width: 100%;
-  overflow: overlay;
+  /* Para que no se vea la barra de scroll */
+  overflow: overlay;  
 }
 
 div {
   height: 100%;
   width: auto;
-  display: inline-block;
 
 }
 
@@ -103,7 +109,28 @@ a {
     text-decoration: none;
     text-align: center;
 }
-  
+ 
+/* Formatos de Main - Contenido */
+.card-body {
+  width: auto;
+
+}
+
+.carousel_card {
+  background-color: rgba(210, 105, 30, 0.418); 
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel_card_img {
+  object-fit: scale-down;
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+}
+
 /* Formatos del Footer */
 
 footer {
@@ -119,13 +146,6 @@ footer {
   height: 100%;
 }
 
-.carousel_card {
-  height: 100%;
-}
-
-.carousel_card_img {
-  height: 80%;
-}
 
 @media screen and (max-width: 990px) {
   section {
