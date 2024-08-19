@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-
+@font-face {
+  font-family: "ejemploMexico";
+  src: url(../resources/fonts/¡Viva\ México\ cabrones!.ttf);
+} 
 
 body {
     height: 100vh;
@@ -11,7 +14,9 @@ body {
     background-image: url(../resources/images/travel-2611611_640.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "ejemploMexico";
 }
+
 
 p {
   margin-bottom: 0%;
@@ -25,12 +30,6 @@ section {
   height: 80vh;
   width: 100%;
   overflow: overlay;
-}
-
-article {
-  height: 100%;
-  display: block;
-  overflow: scroll;
 }
 
 div {
